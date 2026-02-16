@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>{{ mymember.firstname }} {{ mymember.lastname }} Details</h1>
+<link rel="stylesheet" href="{% static 'members/style.css' %}">
+<p>Phone: {{ mymember.phone }}</p>
+<p>Member since: {{ mymember.joined_date }}</p>
+
+<p>Back to <a href="/members">Members</a></p>
+
+</body>
+</html>
